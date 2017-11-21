@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { BodyModule } from './body/body.module';
+import { DataService } from './data.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +16,7 @@ import { BodyModule } from './body/body.module';
     HeaderModule,
     BodyModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
