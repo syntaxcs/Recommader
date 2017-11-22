@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BodyComponent } from './body.component';
-import { ItemComponent } from './item/item.component';
-import { ProComponent } from './promotion/promotion.component';
+import { MovieModule } from './movie/movie.module';
+import { BarComponent }from'./tabbar/tab.component';
 @NgModule({
     declarations: [
         BodyComponent,
-        ItemComponent,
-        ProComponent
+        BarComponent
     ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        MovieModule
     ],
     exports: [
         BodyComponent

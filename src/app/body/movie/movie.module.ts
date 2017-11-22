@@ -1,22 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header.component';
-import { TitleComponent } from './title/title.component';
+import { MovieComponent } from './movie.component';
+import { MovieService } from './movie.service';
 @NgModule({
     declarations: [
-        HeaderComponent,
-        TitleComponent
+        MovieComponent
     ],
     imports: [
         BrowserModule,
         FormsModule
     ],
     exports: [
-        HeaderComponent
+        MovieComponent
     ],
-    providers: [],
-    bootstrap: [HeaderComponent]
+    providers: [MovieService],
+    bootstrap: [MovieComponent]
 })
 
-export class HeaderModule { }
+export class MovieModule { }
