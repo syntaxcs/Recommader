@@ -22,12 +22,20 @@
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
+<<<<<<< HEAD
     "bootstrap": "^4.0.0-beta",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
     "ng-bootstrap": "^1.6.3",
     "rxjs": "^5.4.2",
     "tether": "^1.4.1",
+=======
+    "bootstrap": "^4.0.0-beta.2",
+    "core-js": "^2.4.1",
+    "ng2-modal": "0.0.25",
+    "ng2-opd-popup": "^1.1.21",
+    "rxjs": "^5.4.2",
+>>>>>>> 8dc28cebf8ae0694af9f61141335f6ac6b552551
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
