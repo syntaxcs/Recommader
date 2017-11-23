@@ -5,11 +5,13 @@ import { BodyComponent } from './body.component';
 import { MovieModule } from './movie/movie.module';
 import { BarComponent }from'./tabbar/tab.component';
 import { SlideComponent }from'./firstpage/slide.component';
+import { ToptenComponent }from'./Content/Top-10.component';
 @NgModule({
     declarations: [
         BodyComponent,
         BarComponent,
-        SlideComponent
+        SlideComponent,
+        ToptenComponent
     ],
     imports: [
         BrowserModule,
