@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-
 import { BodyComponent } from './body.component';
 import { BarComponent } from './tabbar/tab.component';
 import { ToptenComponent } from './Content/Top-10.component';
@@ -10,6 +9,7 @@ import { SearchComponent } from './Search/search.component';
 import { MovieComponent } from './movie/movie.component';
 import { SlideComponent } from './firstpage/slide.component';
 import { BothComponent } from './both/both.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
     {
@@ -38,7 +38,8 @@ const appRoutes: Routes = [
         SearchComponent,
         MovieComponent,
         SlideComponent,
-        BothComponent
+        BothComponent,
+        LoginComponent
     ],
     imports: [
         BrowserModule,
