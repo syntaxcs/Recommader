@@ -1,10 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Http, HttpModule } from '@angular/http';
+import { Observable } from 'rxjs/Rx';
+import 'rxjs/add/operator/map';
+import { Movie } from './movie.model';
 @Injectable()
 export class DataService {
-    constructor() { }
-    cars = ['dof', 'dee', 'doo'
-    ];
-    mydata(){
-        return 'This is my data man!';
+    constructor(private http: Http) { }
+    fetchData() {
+        this.http.get('../assets/movie.json').map(
+            (response) => response.json()
+        ).subscribe(
+            (data) => console.log(data)
+            )
     }
+
 }

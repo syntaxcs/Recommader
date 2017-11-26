@@ -3,15 +3,14 @@ import { DataService } from './data.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-
+  providers: [DataService]
 })
 export class AppComponent {
-  constructor(private dataService: DataService){
+  constructor(private dataService: DataService) {
 
   }
-  somProperty: string = "";
-  ngOnInit(){
-    console.log(this.dataService.cars);
-    this.somProperty = this.dataService.mydata();
+
+  ngOnInit() {
+    // this.dataService.fetchData();
   }
 }
