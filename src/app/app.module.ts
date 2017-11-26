@@ -6,6 +6,10 @@ import { HeaderModule } from './header/header.module';
 import { BodyModule } from './body/body.module';
 import { DataService } from './data.service';
 
+import { HeaderComponent } from './header/header.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +18,8 @@ import { DataService } from './data.service';
     BrowserModule,
     FormsModule,
     HeaderModule,
-    BodyModule
+    BodyModule,
+  
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header.component';
 import { TitleComponent } from './title/title.component';
+import { HttpModule } from '@angular/http/src/http_module';
+
+
 @NgModule({
     declarations: [
         HeaderComponent,
@@ -10,7 +13,8 @@ import { TitleComponent } from './title/title.component';
     ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
+        
     ],
     exports: [
         HeaderComponent
