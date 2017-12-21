@@ -12,6 +12,13 @@ import { AnimationComponent  } from './Animation/animation.component';
 import { HorrorComponent  } from './Horror/horror.component';
 import { ThrillerComponent  } from './Thriller/thriller.component';
 import { GenresComponent } from './genres.component';
+import { actionComponent } from './Action/action.component';
+import { adventureComponent }from './adveture/adventure.component';
+import { comedyComponent } from './comedy/comedy.component';
+import { dramaComponent } from './drama/drama.component';
+import { fantasyComponent } from './fantasy/fantasy.component';
+import { romanceComponent } from './romance/romance.component';
+import { scifiComponent } from './scifi/scifi.component'
 const appRoutes: Routes = [
     {
         path:'War',component: WarComponent
@@ -49,8 +56,8 @@ const appRoutes: Routes = [
         CrimeComponent,
         AnimationComponent,
         HorrorComponent,
-        ThrillerComponent
-        
+        ThrillerComponent,
+        actionComponent
     ],
     imports: [
         BrowserModule,

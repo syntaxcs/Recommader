@@ -12,6 +12,7 @@ import { BothComponent } from './both/both.component';
 import { LoginComponent } from './login/login.component';
 import { GenresComponent } from './Genres/genres.component';
 import { GenresModule } from './Genres/genres.module';
+import { RecomComponent } from './Recom/recom.component';
 
 const appRoutes: Routes = [
     {
@@ -34,6 +35,9 @@ const appRoutes: Routes = [
     },
     {
         path:'genres',component: GenresComponent
+    },
+    {
+        path:'recommend',component: RecomComponent
     }
 ];
 
@@ -46,7 +50,8 @@ const appRoutes: Routes = [
         MovieComponent,
         SlideComponent,
         BothComponent,
-        LoginComponent
+        LoginComponent,
+        RecomComponent
     ],
     imports: [
         BrowserModule,

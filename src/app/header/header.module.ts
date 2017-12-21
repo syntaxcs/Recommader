@@ -4,17 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header.component';
 import { TitleComponent } from './title/title.component';
 import { HttpModule } from '@angular/http/src/http_module';
-
-
+import { RouterModule, Routes } from '@angular/router';
 @NgModule({
     declarations: [
         HeaderComponent,
-        TitleComponent
+        TitleComponent,
     ],
     imports: [
         BrowserModule,
-        FormsModule,
-        
+        FormsModule
     ],
     exports: [
         HeaderComponent
