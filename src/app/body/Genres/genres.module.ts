@@ -6,14 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { WarComponent } from './War/war.component';
 import { WesternComponent } from './Western/western.component';
 import { ChildrenComponent } from './Children/children.component';
-import { MysteryComponent  } from './Mystery/mystery.component';
-import { CrimeComponent  } from './Crime/crime.component';
-import { AnimationComponent  } from './Animation/animation.component';
-import { HorrorComponent  } from './Horror/horror.component';
-import { ThrillerComponent  } from './Thriller/thriller.component';
+import { MysteryComponent } from './Mystery/mystery.component';
+import { CrimeComponent } from './Crime/crime.component';
+import { AnimationComponent } from './Animation/animation.component';
+import { HorrorComponent } from './Horror/horror.component';
+import { ThrillerComponent } from './Thriller/thriller.component';
 import { GenresComponent } from './genres.component';
 import { actionComponent } from './Action/action.component';
-import { adventureComponent }from './adveture/adventure.component';
+import { adventureComponent } from './adveture/adventure.component';
 import { comedyComponent } from './comedy/comedy.component';
 import { dramaComponent } from './drama/drama.component';
 import { fantasyComponent } from './fantasy/fantasy.component';
@@ -21,29 +21,52 @@ import { romanceComponent } from './romance/romance.component';
 import { scifiComponent } from './scifi/scifi.component'
 const appRoutes: Routes = [
     {
-        path:'War',component: WarComponent
+        path: 'War', component: WarComponent
     },
     {
-        path:'Western',component: WesternComponent
+        path: 'Western', component: WesternComponent
     },
     {
-        path:'Children',component: ChildrenComponent
+        path: 'Children', component: ChildrenComponent
     },
     {
-        path:'Mystery',component: MysteryComponent
+        path: 'Mystery', component: MysteryComponent
     },
     {
-        path:'Crime',component: CrimeComponent
+        path: 'Crime', component: CrimeComponent
     },
     {
-        path:'Animation',component: AnimationComponent
+        path: 'Animation', component: AnimationComponent
     },
     {
-        path:'Horror',component: HorrorComponent
+        path: 'Horror', component: HorrorComponent
     },
     {
-        path:'Thriller',component: ThrillerComponent
+        path: 'Thriller', component: ThrillerComponent
     },
+    {
+        path: 'Scifi', component: scifiComponent
+    },
+    {
+        path: 'Romance', component: romanceComponent
+    },
+    {
+        path:'Fantasy',component: fantasyComponent
+    },
+    {
+        path:'Drama',component: dramaComponent
+    },
+    {
+        path:'Comedy',component: comedyComponent
+    },
+    {
+        path:'Adventure',component: adventureComponent
+    },
+    {
+        path:'Action',component:actionComponent
+    },
+   
+
 ];
 
 @NgModule({
@@ -57,7 +80,16 @@ const appRoutes: Routes = [
         AnimationComponent,
         HorrorComponent,
         ThrillerComponent,
+        actionComponent,
+        scifiComponent,
+        romanceComponent,
+        fantasyComponent,
+        dramaComponent,
+        comedyComponent,
+        adventureComponent,
         actionComponent
+        
+
     ],
     imports: [
         BrowserModule,
