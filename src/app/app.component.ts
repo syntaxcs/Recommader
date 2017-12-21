@@ -11,6 +11,6 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.dataService.fetchData();
+    //this.dataService.fetchData();
   }
 }
