@@ -10,6 +10,7 @@ import { MovieComponent } from './movie/movie.component';
 import { SlideComponent } from './firstpage/slide.component';
 import { BothComponent } from './both/both.component';
 import { LoginComponent } from './login/login.component';
+import { GenresComponent } from './Genres/genres.component';
 import { GenresModule } from './Genres/genres.module';
 
 const appRoutes: Routes = [
@@ -30,6 +31,9 @@ const appRoutes: Routes = [
     },
     {
         path:'login',component: LoginComponent
+    },
+    {
+        path:'genres',component: GenresComponent
     }
 ];
 
