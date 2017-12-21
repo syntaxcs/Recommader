@@ -7,11 +7,8 @@ import { Movie } from './movie.model';
 export class DataService {
     constructor(private http: Http) { }
     fetchData() {
-        this.http.get('../assets/movie.json').map(
+        return this.http.get('../assets/movie.json').map(
             (response) => response.json()
-        ).subscribe(
-            (data) => console.log(data)
-            )
+        )
     }
-
 }
