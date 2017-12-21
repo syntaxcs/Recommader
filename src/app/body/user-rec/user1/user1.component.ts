@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../data.service';
 @Component({
-    selector: 'app-user-one',
+    selector: 'app-userone',
     templateUrl: './user1.component.html'
 })
 export class UserOneComponent implements OnInit {

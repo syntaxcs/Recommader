@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
-import { UserRecommenComponent} from './user-rec.component';
-import { UserOneComponent} from './user1/user1.component';
+import { UserRecommenComponent } from './user-rec.component';
+import { UserOneComponent } from './user1/user1.component';
+import { DataService } from '../../data.service';
 @NgModule({
     declarations: [
         UserRecommenComponent,
@@ -11,8 +11,7 @@ import { UserOneComponent} from './user1/user1.component';
     ],
     imports: [
         BrowserModule,
-        FormsModule,
-        //RouterModule.forRoot(appRoutes),
+        FormsModule
     ],
     exports: [
         UserRecommenComponent
@@ -20,5 +19,4 @@ import { UserOneComponent} from './user1/user1.component';
     providers: [],
     bootstrap: [UserRecommenComponent]
 })
-
-export class UserRecommenModule { }
+export class UserRecModule { }
