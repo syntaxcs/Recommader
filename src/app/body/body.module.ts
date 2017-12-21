@@ -13,7 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { GenresComponent } from './Genres/genres.component';
 import { GenresModule } from './Genres/genres.module';
 import { RecomComponent } from './Recom/recom.component';
-
+import { UserRecommenComponent } from './user-rec/user-rec.component';
+import { UserRecommenModule } from './user-rec/user-rec.module'
 const appRoutes: Routes = [
     {
         path: '', component: BothComponent
@@ -51,12 +52,14 @@ const appRoutes: Routes = [
         SlideComponent,
         BothComponent,
         LoginComponent,
-        RecomComponent
+        RecomComponent,
+        UserRecommenComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         GenresModule,
+        //UserRecommenModule,
         RouterModule.forRoot(appRoutes),
     ],
     exports: [
