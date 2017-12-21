@@ -10,15 +10,7 @@ import { MovieComponent } from './movie/movie.component';
 import { SlideComponent } from './firstpage/slide.component';
 import { BothComponent } from './both/both.component';
 import { LoginComponent } from './login/login.component';
-import { RecomComponent } from './Recom/recom.component';
-import { WarComponent } from './Genres/War/war.component';
-import { WesternComponent } from './Genres/Western/western.component';
-import { ChildrenComponent } from './Genres/Children/children.component';
-import { MysteryComponent  } from './Genres/Mystery/mystery.component';
-import { CrimeComponent  } from './Genres/Crime/crime.component';
-import { AnimationComponent  } from './Genres/Animation/animation.component';
-import { HorrorComponent  } from './Genres/Horror/horror.component';
-import { ThrillerComponent  } from './Genres/Thriller/thriller.component';
+import { GenresModule } from './Genres/genres.module';
 
 const appRoutes: Routes = [
     {
@@ -38,36 +30,7 @@ const appRoutes: Routes = [
     },
     {
         path:'login',component: LoginComponent
-    },
-    {
-        path:'Recom',component: RecomComponent
-    },
-    {
-        path:'War',component: WarComponent
-    },
-    {
-        path:'Western',component: WesternComponent
-    },
-    {
-        path:'Children',component: ChildrenComponent
-    },
-    {
-        path:'Mystery',component: MysteryComponent
-    },
-    {
-        path:'Crime',component: CrimeComponent
-    },
-    {
-        path:'Animation',component: AnimationComponent
-    },
-    {
-        path:'Horror',component: HorrorComponent
-    },
-    {
-        path:'Thriller',component: ThrillerComponent
-    },
-   
-
+    }
 ];
 
 @NgModule({
@@ -79,21 +42,12 @@ const appRoutes: Routes = [
         MovieComponent,
         SlideComponent,
         BothComponent,
-        LoginComponent,
-        RecomComponent,
-        WarComponent,
-        WesternComponent,
-        ChildrenComponent,
-        MysteryComponent,
-        CrimeComponent,
-        AnimationComponent,
-        HorrorComponent,
-        ThrillerComponent
-        
+        LoginComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
+        GenresModule,
         RouterModule.forRoot(appRoutes),
     ],
     exports: [
