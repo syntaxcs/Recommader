@@ -14,7 +14,8 @@ import { GenresComponent } from './Genres/genres.component';
 import { GenresModule } from './Genres/genres.module';
 import { RecomComponent } from './Recom/recom.component';
 import { UserRecommenComponent } from './user-rec/user-rec.component';
-import { UserRecommenModule } from './user-rec/user-rec.module'
+import { UserRecModule } from './user-rec/user-rec.module';
+import {} from './login/login.module'
 const appRoutes: Routes = [
     {
         path: '', component: BothComponent
@@ -52,15 +53,15 @@ const appRoutes: Routes = [
         SlideComponent,
         BothComponent,
         LoginComponent,
-        RecomComponent,
-        UserRecommenComponent
+        RecomComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
         GenresModule,
-        //UserRecommenModule,
-        RouterModule.forRoot(appRoutes),
+        UserRecModule,
+        UserRecModule,
+        RouterModule.forRoot(appRoutes)
     ],
     exports: [
         BodyComponent
