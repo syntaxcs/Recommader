@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../../data.service';
 @Component({
     selector: 'app-user-one',
-    templateUrl: './user1.component.html'
+    templateUrl: './user8.component.html'
 })
-export class UserOneComponent implements OnInit {
+export class UserEaghComponent implements OnInit {
     data = [];
     test = [
         {id:'2339'},{id:'2344'},{id:'2391'},{id:'2396 '},{id:'2406 '},
