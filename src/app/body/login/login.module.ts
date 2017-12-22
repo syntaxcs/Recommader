@@ -3,19 +3,18 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login.component';
-import { RouterModule, Routes } from '@angular/router';
-import { UserRecommenComponent} from './user-rec.component';
-import { UserOneComponent} from './user1/user1.component';
+
+
+import { UserOneComponent} from '../user-rec/user1/user1.component';
 
 const appRoutes: Routes = [
     {
         path: 'user1', component: UserOneComponent
-    },
+    }
 ]
 @NgModule({
     declarations: [
-        
-        UserRecommenComponent,
+        LoginComponent,
         UserOneComponent
 
     ],
@@ -31,4 +30,4 @@ const appRoutes: Routes = [
     bootstrap: [LoginComponent]
 })
 
-export class GenresModule { }
+export class LoginModule { }

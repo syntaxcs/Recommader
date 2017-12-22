@@ -11,6 +11,7 @@ export class UserOneComponent implements OnInit {
         {id:'17'},{id:'32'},{id:'34'},{id:'36'},{id:'39'}, 
         {id:'40'},{id:'47'},{id:'50'},{id:'104'},{id:'110'},
         {id:'111'},{id:'112'},{id:'122'},{id:'126'},{id:'130'}
+       
     ];
     constructor(private dataService: DataService){}
     
